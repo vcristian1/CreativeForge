@@ -1,6 +1,6 @@
 import { useState} from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import logo from "../../../public/logo.svg";
+import homelogo from "../../../public/logo.svg";
 import Links from "./LinkComponent";
 import Link from "next/link"
 import { SelectedPage } from "../../../shared/types";
@@ -29,7 +29,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${flexBetween} w-full gap-16`}>
                 {/* Left Side */}
                 
-                <Link href="/"><Image className="h-[100px] w-[100px] md:h-[100px] md:w-[175px] lg:h-[110px] lg:w-[110px]" src={logo} alt="logo" /></Link>
+                <Link href="/"><Image className="h-[100px] w-[100px] md:h-[100px] md:w-[175px] lg:h-[110px] lg:w-[110px]" src={homelogo} alt="logo" /></Link>
                 {/* Right Side */}
 
                 {isAboveMediumScreens ? (
