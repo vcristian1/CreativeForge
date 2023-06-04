@@ -1,6 +1,6 @@
 import { useState} from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import homelogo from "../../../public/logo.svg";
+import homelogo from "../../../public/homelogo.svg";
 import Links from "./LinkComponent";
 import Link from "next/link"
 import { SelectedPage } from "../../../shared/types";
