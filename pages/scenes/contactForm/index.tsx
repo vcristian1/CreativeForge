@@ -26,14 +26,15 @@ const ContactForm = ({ setSelectedPage }: Props) => {
     }
 
     return (
-    <div id="Contact" className='bg-[#fffcf2] h-full w-full'>
-        <section className='w-full mb-[100px] mt-[90px] md:mt-[100px] md:mb-[125px] lg:mt-[100px]'>
+    <div id="Contact" className='bg-[#ffffff] h-full w-full'>
+        <section className=''>
             <div className='w-5/6 mx-auto'>
                 <motion.div
+                className=''
                 >
                     {/* HEADER HERE */}
                     <motion.div
-                    className="mt-4 md:w-4/5 w-full"
+                    className="md:w-4/5 w-full"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -43,8 +44,10 @@ const ContactForm = ({ setSelectedPage }: Props) => {
                         visible: { opacity: 1, x: 0 },
                     }}
                     >
+                        <br></br>
+                        <br></br>
                         <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">
-                            Book an <span className="text-[#246a73]">Appointment</span>
+                            Contact
                         </h2>
                         <p className="font-thin mb-10 md:mb-[-15px] my-10 text-[18px] md:text-[22px] lg:text-[30px] lg:mt-[80px]">
                         With over 10 years of experience, let Peace Pelvic Health guide you on your healing journey. Contact us today to schedule an evaluation and please specify preferred availability.
@@ -121,41 +124,11 @@ const ContactForm = ({ setSelectedPage }: Props) => {
 
                                 <button
                                     type="submit"
-                                    className="rounded-md bg-[#246a73] px-10 py-2 md:px-12 md:py-3 lg:px-12 lg:py-4 lg:text-[26px] font-semibold text-[#FFFFFF] hover:bg-[#dea54b] hover:text-[#160F29] transition duration-500 mt-10"
+                                    className="rounded-md bg-[#246a73] px-10 py-2 md:px-12 md:py-3 lg:px-12 lg:py-4 lg:text-[26px] font-semibold text-[#FFFFFF] hover:bg-[#dea54b] hover:text-[#160F29] transition duration-500 mt-10 md:mb-[50px]"
                                 >
                                     Submit
-                                </button>                        
+                                </button>   
                             </form>
-                        </motion.div>
-
-                        <motion.div
-                            className="relative mt-16 basis-2/5 md:mt-0 "
-                            initial="visible"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.5 }}
-                            transition={{ duration: .5 }}
-                            variants={{
-                            hidden: { opacity: 0, y: 90 },
-                            visible: { opacity: 1, y: 0 },
-                            }}
-                        >
-                            <motion.div 
-                             className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]"
-                             initial="hidden"
-                             whileInView="visible"
-                             viewport={{ once: true, amount: 0.5 }}
-                             transition={{ delay: .25, duration: 0.5 }}
-                             variants={{
-                                hidden: { opacity:0, x:-50},
-                                visible: { opacity: 1, x: 0},
-                             }}
-                            >
-                                <Image
-                                    className="w-full rounded-[20px] hover:saturate-150 transition duration-500"
-                                    alt="contact-us-page-graphic"
-                                    src={ContactUsPageGraphic}
-                                />
-                            </motion.div>
                         </motion.div>
                     </div>
                 </motion.div>

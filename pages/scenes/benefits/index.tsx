@@ -119,7 +119,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 
   return (
     <section
-     className='mx-auto min-h-full w-full py-10 md:py-20'
+     className='bg-[#ffffff] mx-auto min-h-full w-full py-10 md:py-20'
     >
         <motion.div 
         >
@@ -149,7 +149,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                       visible: { opacity: 1, x: 0},
                   }}
                   >
-                      <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">Welcome to{" "}<span className='text-[#246a73]'>Peace Pelvic Health</span></h2>
+                      <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">Services</h2>
                       <p className="font-thin my-14 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[80px]">
                       Peace Pelvic Health is a specialty physical therapy clinic with 10+ years of experience serving northwest Chicagoland and suburbs. Holistic one-on-one treatments with a pelvic floor and orthopedic specialist, encompassing mind and body when working towards solutions for pain and physical dysfunction.                      </p>
                       <p className="font-thin my-14 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[80px]">
@@ -162,7 +162,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               </div>
             </motion.div>
 
-            <section id="Projects" className="w-full bg-[#246a73] py-20 md:py-20">
+            <section id="Projects" className="w-full bg-[#F9FBFD] py-20 md:py-20">
               <motion.div
               className="relative"
               >
@@ -177,7 +177,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 visible: { opacity: 1, x: 0},
                 }}
                 >
-                  <h2 className="text-4xl tracking-tight text-[#dea54b] md:text-4xl lg:text-6xl lg:mt-10">Conditions <span className="text-[#F3DFC1]">We</span>{" "}Treat</h2>
+                  <h2 className="text-4xl tracking-tight text-[#dea54b] md:text-4xl lg:text-6xl lg:mt-10">Pricing</h2>
                   <p className="text-[#f3dfc1] font-thin mb-10 md:mb-[-30px] my-10 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[60px]">
                   We are dedicated to helping both women and men move toward wellness. Pelvic floor physical therapy can provide a solution for pain and dysfunction associated with these conditions.</p>
                   
@@ -236,8 +236,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                visible: { opacity: 1, x: 0 },
                              }}
                             >
-                                <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">Peace Pelvic Health{""}
-                                <span className='text-[#246a73]'> Testimonials</span>
+                                <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">Testimonials
                                 </h2>
                                 <p className="font-thin mb-10 md:mb-[-15px] my-14 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[80px]">
                                 Read what our patients have to say about their experiences with our treatments and services. We are proud to have earned their trust and loyalty. We hope that their stories will help you make an informed decision when choosing us for your pelvic or orthopedic needs.</p>

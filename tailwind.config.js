@@ -39,7 +39,7 @@ module.exports = {
         "treatmentspage3": "url('/TreatmentsPage3.svg')",
       }),
       fontFamily: {
-        josefinsans: ["Josefin Sans"],
+        mulish: ["Mulish"],
         
       },
       content: {

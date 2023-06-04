@@ -27,7 +27,7 @@ const Contact = ({ setSelectedPage }: Props) => {
   }
 
   return (
-    <div id="Contact" className='bg-[#fffcf2] h-full w-full'>
+    <div id="Contact" className='bg-[#ffffff] h-full w-full'>
         <Head>
             <title>
                 Contact Us | Peace Pelvic Health

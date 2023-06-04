@@ -18,7 +18,7 @@ type Props = {
 
 const Footer = ({ setSelectedPage }: Props) => {
   return (
-    <footer className="bg-[#003a47] py-6 md:py-3 lg:py-10">
+    <footer className="bg-[#011C43] py-6 md:py-12 lg:py-10">
         <div className="text-[#f3dfc1] justify-content mx-auto w-5/6 gap-16 md:flex">
             <div className="mt-0 lg:mt-0 w-2/3 md:w-1/3 md:mt-0">
                 <Image className="h-[80px] w-[80px] lg:h-[90px] lg:w-[90px]" src={Logo} alt="logo" width={60} height={60}/>

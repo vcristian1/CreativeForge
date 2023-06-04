@@ -16,7 +16,7 @@ const lowerCasePage = page as SelectedPage
   return (
     <Link
       className={`${selectedPage === lowerCasePage ? "font-josefinsans" : ""}
-        transition duration-500 md:text-[16px] lg:text-[24px] hover:text-[#dea54b] text-[#f3dfc1] font-thin
+        transition duration-500 md:text-[16px] lg:text-[24px] hover:text-[#56AEFF] text-[#011C43]
       `}
       href={`/${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}

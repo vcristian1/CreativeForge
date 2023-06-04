@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -9,6 +8,6 @@ body,
 .app {
     height: 100%;
     width: 100%;
-    font-family: "Josefin Sans";
+    font-family: "Mulish";
     @apply text-[#160F29]
 }

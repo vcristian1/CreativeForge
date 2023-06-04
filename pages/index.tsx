@@ -37,7 +37,7 @@ function App() {
         <link rel="icon" type="image/svg+xml" href="/PEACE-PELVIC-HEALTH3.svg" />
         <meta
           name="description"
-          content="Peace Pelvic Health, is a is a pelvic health clinic near you with specialized physical therapists in orthopedic and pelvic health conditions in the Chicagoland area."
+          content="Creative Forge is a full service web design and development studio specializing in designing and developing custom and effective web applications for businesses and individuals that drive growth."
           key="desc"
         />
       </Head>

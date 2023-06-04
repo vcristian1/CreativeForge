@@ -1,6 +1,6 @@
 import { useState} from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "../../../public/PEACE-PELVIC-HEALTH3.svg";
+import Logo from "../../../public/logo.svg";
 import Links from "./LinkComponent";
 import Link from "next/link"
 import { SelectedPage } from "../../../shared/types";
@@ -17,7 +17,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "bg-[#003a47]" : "bg-[#065a60]"
+  const navbarBackground = isTopOfPage ? "bg-[#F9FBFD] drop-shadow-xl" : ""
 
   return (
     <nav>
@@ -29,24 +29,23 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${flexBetween} w-full gap-16`}>
                 {/* Left Side */}
                 
-                <Link href="/"><Image className="h-[70px] w-[70px] md:h-[80px] md:w-[80px] lg:h-[110px] lg:w-[110px]" src={Logo} alt="logo" /></Link>
+                <Link href="/"><Image className="h-[100px] w-[100px] md:h-[100px] md:w-[175px] lg:h-[110px] lg:w-[110px]" src={Logo} alt="logo" /></Link>
                 {/* Right Side */}
 
                 {isAboveMediumScreens ? (
                     <div className={`${flexBetween} w-full`}>
                         {/* Inner Left Side (All Links) */}
                         <div className={`md:ml-[150px] lg:ml-[330px] flex gap-10 md:gap-12 text-[14px] md:text-[16px] lg:text-[24px] `}>
-                            <Link href="/" className="font-thin xs:text-[14px] sm:text-[14px] md:text-[16px] hover:text-[#dea54b] text-[#f3dfc1] transition duration-500 lg:text-[24px]">Home</Link>
-                            <Links page="About" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Links page="Conditions" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Links page="Treatments" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Links page="FAQ" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                            <Link href="/" className="font-thin xs:text-[14px] sm:text-[14px] md:text-[16px] hover:text-[#56AEFF] text-[#011C43] transition duration-500 lg:text-[24px]">Home</Link>
+                            <Links page="Services" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                            <Links page="Pricing" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                            <Links page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                             <Links page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                         </div>
                         {/* Inner Right Side (Call and Email buttons)*/}
                         <div className={`${flexBetween} gap-2 md:gap-3`}>
                             <Link
-                            className="rounded-md bg-[#dea54b] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#160F29] hover:bg-[#f3dfc1] hover:text-[#160F29] transition duration-500 ml-1 md:ml-1"
+                            className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1"
                             href="tel:773-801-5141"
                             > Call 
                             </Link>                         

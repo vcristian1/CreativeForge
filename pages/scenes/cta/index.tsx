@@ -21,7 +21,7 @@ const CTA = ({ setSelectedPage }: Props) => {
         visible: { opacity: 1, x: 0},
       }}
     >
-        <div className="relative isolate overflow-hidden bg-[#003a47] px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-[#011C43] px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <div className="mb-14 md:mb-[80px] mx-auto max-w-md text-center lg:mt-[90px] lg:text-center">
                 <h2 className="font-bold tracking-tight text-[#F3DFC1] text-[28px] md:text-[30px] lg:text-[48px]">Schedule Your Evaluation Today</h2>
                 <p className="font-thin text-[20px] md:text-[22px] lg:text-[30px] mt-6 tracking-tight text-[#F3DFC1]">Patients can schedule a free 15 minute consultation. Let us at Peace Pelvic Health guide you on your healing journey!</p>
