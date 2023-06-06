@@ -157,14 +157,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
               </div>
           </motion.div>
 
-          <section className="bg-slate-100 dark:bg-gray-900" >
+          <section className="bg-slate-100" >
             <div className="py-8 px-4 md:mx-[100px] md:mt-[-50px] mx-auto lg:mx-[200px] max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12 md:px-[125px] md:mt-[50px] md:mb-[50px]">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Pricing</h2>
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Our Pricing</h2>
                     <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[31px] md:mt-[50px]">View our various monthly and annual plans below to determine which service best meets the needs of your business.</p>
                 </div>
                 <div className="flex space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow xl:p-8">
                         <h3 className="mb-4 text-2xl font-semibold">Startup Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$14.99</span>
@@ -232,7 +232,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
                     </div>
                     
-                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
                         <h3 className="mb-4 text-2xl font-semibold">Standard Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$18.99</span>
@@ -300,7 +300,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
                     </div>
                     
-                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
                         <h3 className="mb-4 text-2xl font-semibold">Premium Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$24.99</span>
@@ -405,7 +405,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                              }}
                             >
                               <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-                                  <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Completed Projects</h2>
+                                  <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Our Completed Projects</h2>
                                   <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[31px] md:mt-[50px]">View some of our most recently completed projects by clicking an industry tab below.</p>
                               </div>
                             </motion.div>

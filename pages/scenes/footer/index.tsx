@@ -18,7 +18,7 @@ type Props = {
 
 const Footer = ({ setSelectedPage }: Props) => {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-white">
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
@@ -28,16 +28,16 @@ const Footer = ({ setSelectedPage }: Props) => {
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
-                    <h2 className="mb-6 text-sm md:text-md text-[#011C43] font-bold dark:text-white">Additional Links</h2>
-                    <ul className="text-gray-600 dark:text-gray-400 font-medium">
+                    <h2 className="mb-6 text-sm md:text-md text-[#011C43] font-bold">Additional Links</h2>
+                    <ul className="text-gray-600 font-medium">
                         <li className="mb-4">
                             <Link href="/FAQ" className="hover:underline">FAQ</Link>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 className="mb-6 text-sm md:text-md text-[#011C43] font-bold dark:text-white">Follow Us</h2>
-                    <ul className="text-gray-600 dark:text-gray-400 font-medium">
+                    <h2 className="mb-6 text-sm md:text-md text-[#011C43] font-bold">Follow Us</h2>
+                    <ul className="text-gray-600 font-medium">
                         <li className="mb-4">
                             <a href="#" className="hover:underline ">LinkedIn</a>
                         </li>
@@ -47,8 +47,8 @@ const Footer = ({ setSelectedPage }: Props) => {
                     </ul>
                 </div>
                 <div>
-                    <h2 className="mb-6 text-sm md:text-md text-[#011C43] font-bold dark:text-white">Legal</h2>
-                    <ul className="text-gray-600 dark:text-gray-400 font-medium">
+                    <h2 className="mb-6 text-sm md:text-md text-[#011C43] font-bold">Legal</h2>
+                    <ul className="text-gray-600 font-medium">
                         <li className="mb-4">
                             <a href="#" className="hover:underline">Privacy Policy</a>
                         </li>
@@ -61,7 +61,7 @@ const Footer = ({ setSelectedPage }: Props) => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-[#011C43] sm:text-center dark:text-gray-400">© 2023 <Link href="/" className="hover:underline">Creative Forge™</Link>. All Rights Reserved.
+            <span className="text-sm text-[#011C43] sm:text-center">© 2023 <Link href="/" className="hover:underline">Creative Forge™</Link>. All Rights Reserved.
             </span>
             <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="#" className="text-[#011C43] hover:text-[#011C43] dark:hover:text-white">
