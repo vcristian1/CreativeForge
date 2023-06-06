@@ -160,7 +160,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
           <section className="bg-slate-50" >
             <div className="py-8 px-4 md:mx-[100px] md:mt-[-50px] mx-auto lg:mx-[200px] max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-md text-center mb-8 mt-[50px] lg:mb-12 px-4 md:px-[125px] lg:px-0 md:mt-[50px] md:mb-[50px]">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-[50px]">Our Pricing</h2>
+                    <h2 className="mb-4 text-4xl tracking-tight md:text-[38px] font-extrabold text-gray-900 lg:text-[50px]">Our Pricing</h2>
                     <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">View our various monthly and annual plans below to determine which service best meets the needs of your business.</p>
                 </div>
                 <div className="md:flex space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
