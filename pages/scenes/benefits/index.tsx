@@ -9,7 +9,7 @@ import image4 from "../../../public/service-4.svg";
 import image5 from "../../../public/service-5.svg";
 import image6 from "../../../public/service-6.svg";
 import HomePageGraphic2 from "../../../public/HomePageGraphic2.svg"
-import peace from "../../../public/peace.svg"
+import peace from "../../../public/peace-pelvic-health.svg"
 import colibri from "../../../public/colibri.svg"
 import vtr from "../../../public/highvine.svg"
 import { Box, Text, Heading, Container, Button } from 'theme-ui';
