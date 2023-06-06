@@ -23,7 +23,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
         <div
-         className={`${navbarBackground} fixed top-0 z-30 w-full py-2.5 md:py-0.5 lg:py-2.5`} 
+         className={`${navbarBackground} fixed top-0 z-30 w-full py-2.5 md:py-0.5 lg:py-0.5`} 
         >
           <div className={`${flexBetween} mx-auto w-5/6`}>
             {/* Name and Menu Icon within this container */}
@@ -54,7 +54,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     </div>
                     ) : (
                         // If it is not aboveMdeiumScreen then the below code will render for mobile screens
-                        <button className="text-[#f3dfc1] rounded-full transition duration-500 p-2 hover:text-[#dea54b]" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                        <button className="text-[#56AEFF] rounded-full transition duration-500 p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
                             </svg>
@@ -66,25 +66,24 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
         {/* Mobile Menu Modal */}
         { !isAboveMediumScreens && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-[#003a47] drop-shadow-xl">
+            <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-[#56AEFF] drop-shadow-xl">
                 {/* Close Icon Here */}
                 <div className="flex justify-end p-12">
                     <button
                      onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >
                         <XMarkIcon 
-                         className="h-6 w-6 text-[#f3dfc1] hover:text-[#dea54b] transition duration-500"
+                         className="h-6 w-6 text-slate-50 transition duration-500"
                         />
                     </button>
                 </div>
                 {/* MENU ITEMS */}
-                <div className="mt-[-5px] ml-[33%] flex flex-col gap-10 text-[18px] hover:text-[#dbb42c]">
-                    <Link href="/" className="transition duration-500 lg:text-[24px] hover:text-[#dbb42c] text-[#F3DFC1] font-semibold">Home</Link>
-                    <Link href="/About" className="transition duration-500 lg:text-[24px] hover:text-[#dbb42c] text-[#F3DFC1] font-semibold">About</Link>
-                    <Link href="/Conditions" className="transition duration-500 lg:text-[24px] hover:text-[#dbb42c] text-[#F3DFC1] font-semibold">Conditions</Link>
-                    <Link href="/Treatments" className="transition duration-500 lg:text-[24px] hover:text-[#dbb42c] text-[#F3DFC1] font-semibold">Treatments</Link>
-                    <Link href="/FAQ" className="transition duration-500 lg:text-[24px] hover:text-[#dbb42c] text-[#F3DFC1] font-semibold">FAQ</Link>
-                    <Link href="/Contact" className="transition duration-500 lg:text-[24px] hover:text-[#dbb42c] text-[#F3DFC1] font-semibold">Contact</Link>
+                <div className="mt-[-5px] ml-[33%] flex flex-col gap-10 text-[18px]">
+                <Link href="/" className="font-thin text-[18px] md:text-[16px] text-[#011C43] transition duration-500 lg:text-[24px]">Home</Link>
+                <AnchorLink href="#Services">Services</AnchorLink>
+                <AnchorLink href="#Pricing">Pricing</AnchorLink>
+                <AnchorLink href="#Projects">Projects</AnchorLink>
+                <AnchorLink href="#Contact">Contact</AnchorLink>
                 </div>
             </div>
         )}
