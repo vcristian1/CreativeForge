@@ -6,6 +6,7 @@ import Link from "next/link"
 import { SelectedPage } from "../../../shared/types";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import Image from 'next/image'
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
     selectedPage: SelectedPage;
@@ -29,7 +30,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${flexBetween} w-full gap-16`}>
                 {/* Left Side */}
                 
-                <Link href="/"><Image className="h-[100px] w-[100px] md:h-[100px] md:w-[175px] lg:h-[110px] lg:w-[110px]" src={homelogo} alt="logo" /></Link>
+                <Link href="/"><Image className="h-[100px] w-[100px] md:h-[80px] md:w-[175px] lg:h-[150px] lg:w-[200px]" src={homelogo} alt="logo" /></Link>
                 {/* Right Side */}
 
                 {isAboveMediumScreens ? (
@@ -37,17 +38,17 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                         {/* Inner Left Side (All Links) */}
                         <div className={`md:ml-[150px] lg:ml-[330px] flex gap-10 md:gap-12 text-[14px] md:text-[16px] lg:text-[24px] `}>
                             <Link href="/" className="font-thin xs:text-[14px] sm:text-[14px] md:text-[16px] hover:text-[#56AEFF] text-[#011C43] transition duration-500 lg:text-[24px]">Home</Link>
-                            <Links page="Services" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Links page="Pricing" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Links page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                            <Links page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                            <AnchorLink href="#Services">Services</AnchorLink>
+                            <AnchorLink href="#Pricing">Pricing</AnchorLink>
+                            <AnchorLink href="#Projects">Projects</AnchorLink>
+                            <AnchorLink href="#Contact">Contact</AnchorLink>
                         </div>
                         {/* Inner Right Side (Call and Email buttons)*/}
                         <div className={`${flexBetween} gap-2 md:gap-3`}>
                             <Link
                             className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1"
-                            href="tel:773-801-5141"
-                            > Call 
+                            href="tel:773-706-5634"
+                            > Lets Chat
                             </Link>                         
                         </div>
                     </div>

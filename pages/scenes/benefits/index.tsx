@@ -1,115 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {  ClassType, FeedbackType, SelectedPage } from '../../../shared/types';
 import { motion } from 'framer-motion';
-import WelcomeGraphic from "../../../public/Welcome.svg"
 import Image from 'next/image'
-import FeedbackCard from "./FeedbackCard";
-import image1 from "../../../public/image1.png";
-import image2 from "../../../public/image2.png";
-import image3 from "../../../public/image3.png";
-import image4 from "../../../public/image4.png";
-import image5 from "../../../public/image5.png";
-import image6 from "../../../public/image6.png";
-import image7 from "../../../public/image7.png";
-import Conditions from './Conditions';
-
-
-const feedback: Array<FeedbackType>= [
-    {
-      id: "feedback-1",
-      content:
-        "I came to see Natalia because I was struggling with frequent urination, as well as urinary retention. Although I was incredibly nervous to go to my first session, Natalia immediately put me at ease. She has such a warm and reassuring demeanor, and she explains things with such detail and accuracy!",
-      name: "A.S",
-      title: "Female, Age: 47",
-    },
-    {
-      id: "feedback-2",
-      content:
-        "I didn't know that there are ways to strengthen and stretch your pelvic floor so that you don't have to resort to surgery... My advice for all new moms, soon-to-be moms, and moms who have been moms for awhile -- go to pelvic floor PT! And if you want to meet with one of the best therapists around, go see Natalia!",
-      name: "Meaghan",
-      title: "Female, Age: 38",
-    },
-    {
-      id: "feedback-3",
-      content:
-        "Without Natalia, I'd be continually living in pain, with embarrassment and missing out on some of the most basics parts of my life. I cannot praise the professionalism and compassion that Natalia brings to her work enough. She gave me my life back.",
-      name: "Anonymous",
-      title: "Female, Age: 42",
-    },
-    {
-      id: "feedback-4",
-      content:
-        "I appreciate the approachability and transparency you exhibited with such a delicate issue and how much care and work you put into the sessions. I am truly grateful for your help. I also enjoyed our conversations.",
-      name: "S.D",
-      title: "Male, Age: 52",
-    },
-    {
-      id: "feedback-5",
-      content:
-        "I had been having sciatica in my right leg that was all but unbearable.(Couldn’t remain sitting for any length of time. Got used to doing lots of tasks standing up because it was the only option.) Natalia introduced me to some movements that made a huge difference, and life became normal again. Her caring for her patients is genuine... there is no substitute for a supremely well-qualified PT who knows you and whom you have developed a therapeutic relationship with.",
-      name: "Ted",
-      title: "Male, Age: 73",
-    },
-    {
-      id: "feedback-6",
-      content:
-        "I met Natalia when I was roughly 10 weeks pregnant to be proactive in educating myself on what to expect but also understand how I could modify as I progressed through pregnancy. She is so approachable, friendly, kind and her personality immediately put me at ease in a very unfamiliar world as a first-time mom.",
-      name: "Luciana",
-      title: "Female, Age: 31",
-    },
-    {
-      id: "feedback-7",
-      content:
-        "I feel so lucky to have gotten the chance to work with and learn from Natalia. Her knowledge and education was so valuable to me. I really feel like I have an increased understanding of how my body, specifically my pelvic floor and core, work and support my health. I additionally learned about healthy voiding habits. I really appreciated Natalia's wealth of knowledge because these are often taboo topics and her ability to be calm, compassionate, empathic, and friendly during our sessions made it all the more enjoyable!",
-      name: "Mandi",
-      title: "Female, Age: 31",
-    },
-    {
-      id: "feedback-8",
-      content:
-        "Natalia not only helped cure my cystocele through several months of treatment, but she made me feel so incredibly comfortable during each session. While pelvic floor PT can be intense, I always put complete trust in Natalia and I knew she would always be honest and upfront with me about potential outcomes after treatment. A postpartum body can be a difficult thing to adjust to and I am beyond grateful that I started my PT journey with Natalia during pregnancy so that we had a relationship built postpartum when I needed her most.",
-      name: "Anna",
-      title: "Female, Age: 36",
-    },
-    {
-      id: "feedback-9",
-      content:
-        "I learned so much about pelvic floor function, the effects of labor and delivery and truly and how important it is to have a physical therapist like Natalia to trust and work with during these difficult phases. As a fitness instructor, I see women all too often dealing with the effects of postpartum (diastasis, prolapse, leaking, etc.) without any knowledge of an industry professional who could help them. I would send them all to Natalia!! She is kind, thoughtful, smart and so talented.",
-      name: "Lyndsey",
-      title: "Female, Age: 39",
-    },
-  ];
-
-  const conditions: Array<ClassType> = [
-    {
-      name: "Pregnancy & Postpartum",
-      image: image1.src,
-    },
-    {
-      name: "Bladder Health",
-      image: image5.src,
-    },
-    {
-      name: "Female Pelvic Pain",
-      image: image3.src,
-    },
-    {
-      name: "Bowel Health",
-      image: image6.src,
-    },
-    {
-      name: "Sexual Health",
-      image: image2.src,
-    },
-    {
-      name: "Orthopedic Conditions",
-      image: image7.src,
-    },
-    {
-      name: "Men's Health",
-      image: image4.src,
-    },
-  ];
+import image1 from "../../../public/service-1.svg";
+import image2 from "../../../public/service-2.svg";
+import image3 from "../../../public/service-3.svg";
+import image4 from "../../../public/service-4.svg";
+import image5 from "../../../public/service-5.svg";
+import image6 from "../../../public/service-6.svg";
+import HomePageGraphic2 from "../../../public/HomePageGraphic2.svg"
+import peace from "../../../public/peace.svg"
+import colibri from "../../../public/colibri.svg"
+import vtr from "../../../public/highvine.svg"
+import { Box, Text, Heading, Container, Button } from 'theme-ui';
+import Link from 'next/link';
+import { AiOutlineClose } from 'react-icons/ai';
+import { keyframes } from '@emotion/react';
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -117,15 +23,47 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
 
+  const [tab, setTab] = useState({
+    active: 'construction',
+  });
+
+  const handleTab = (tab: any) => {
+    if (tab === 'construction') {
+      setTab({
+        ...tab,
+        active: 'construction',
+      });
+    }
+    if (tab === 'realestate') {
+      setTab({
+        ...tab,
+        active: 'realestate',
+      });
+    }
+    if (tab === 'health') {
+      setTab({
+        ...tab,
+        active: 'health',
+      });
+    }
+    if (tab === 'create') {
+      setTab({
+        ...tab,
+        active: 'create',
+      });
+    }
+  };
+
   return (
     <section
      className='bg-[#ffffff] mx-auto min-h-full w-full py-10 md:py-20'
+     id='Services'
     >
         <motion.div 
         >
           {/* Image and Main Header Here */}
           <motion.div 
-          className="mx-auto md:flex w-5/6 items-center justify-center md:h-5/6 md:mb-[50px]"
+          className="mx-auto w-5/6 items-center justify-center md:h-5/6 md:mb-[50px]"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -135,82 +73,311 @@ const Benefits = ({ setSelectedPage }: Props) => {
           visible: { opacity: 1, x: 0},
           }}
           >
-              {/* Main Header Here */}
-              <div className="z-10 md:mt-36 mt-[50px] md:basis-5/6">
-                  {/* Headings Here */}
-                  <motion.div 
-                  className="md:mt-[-100px]"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ delay: 0.5, duration: 0.5 }}
-                  variants={{
-                      hidden: { opacity:0, x:-50},
-                      visible: { opacity: 1, x: 0},
-                  }}
-                  >
-                      <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">Services</h2>
-                      <p className="font-thin my-14 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[80px]">
-                      Peace Pelvic Health is a specialty physical therapy clinic with 10+ years of experience serving northwest Chicagoland and suburbs. Holistic one-on-one treatments with a pelvic floor and orthopedic specialist, encompassing mind and body when working towards solutions for pain and physical dysfunction.                      </p>
-                      <p className="font-thin my-14 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[80px]">
-                      Founded by lead physical therapist Natalia Avelar, DPT, PRPC, Peace Pelvic Health strives to help you find your Peace so that you can feel your best and let the rest fall into place.                      </p>
-                  </motion.div>
-                </div>
-                {/* Image Here */}
-              <div className="flex basis-3/5 justify-center mb-[50px] md:z-10 md:ml-40 md:mt-16 md:justify-items-end lg:mt-[170px]">
-                <Image src={WelcomeGraphic} alt="home-page-graphic" className='rounded-[20px] hover:saturate-150 transition duration-500'/>
-              </div>
-            </motion.div>
-
-            <section id="Projects" className="w-full bg-[#F9FBFD] py-20 md:py-20">
-              <motion.div
-              className="relative"
-              >
-                <motion.div
-                className="mx-auto w-5/6 md:mt-[50px]"
+            {/* Main Header Here */}
+            <div className="z-10 md:mt-36 mt-[50px] text-center">
+                {/* Headings Here */}
+                <motion.div 
+                className="md:mt-[-100px] md:px-[175px]"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
                 variants={{
-                hidden: { opacity:0, x:-90},
-                visible: { opacity: 1, x: 0},
+                    hidden: { opacity:0, x:-50},
+                    visible: { opacity: 1, x: 0},
                 }}
                 >
-                  <h2 className="text-4xl tracking-tight text-[#dea54b] md:text-4xl lg:text-6xl lg:mt-10">Pricing</h2>
-                  <p className="text-[#f3dfc1] font-thin mb-10 md:mb-[-30px] my-10 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[60px]">
-                  We are dedicated to helping both women and men move toward wellness. Pelvic floor physical therapy can provide a solution for pain and dysfunction associated with these conditions.</p>
-                  
+                    <h2 className="tracking-tight text-[#160F29] text-[32px] md:text-[38px] lg:text-[48px] text-center font-bold">Our Expertise</h2>
+                    <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[31px] md:mt-[50px]">From designing to developing, we are committed at Creative Forge to building you a stunning website that drives your business forward.</p>
                 </motion.div>
+              </div>
+              <div className='md:flex cols-3 mt-16 md:mt-[75px] md:space-x-4 lg:space-x-6 lg:mt-[100px]'>
+                <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image2} alt='image2'/>
+                <div className="w-full text-center md:text-left lg:text-left">
+                  <div className="card-body">
+                    <h4 className="mb-2 mt-4 text-[20px] md:text-[16px] lg:text-[24px] lg:mt-[-9px] font-bold">SEO Optimization</h4>
+                    <p className="text-[18px] mb-2 md:text-[14px] lg:text-[22px]">Get the most out of your SEO by working with a company who understands how Google indexes the web.</p>
+                    <div className='space-x-4 lg:mt-4 mb-10'>
+                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[16px] md:text-[14px] lg:text-[20px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                    </div>
+                  </div>
+                </div>
+                <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image1} alt='image2'/>
+                <div className="w-full text-center md:text-left lg:text-left">
+                  <div className="card-body">
+                    <h4 className="mb-2 mt-4 text-[20px] md:text-[16px] lg:text-[24px] lg:mt-[-9px] font-bold">Web Design</h4>
+                    <p className="text-[18px] mb-2 md:text-[14px] lg:text-[22px]">We will design visually impressive and functional online experiences that are catered to your target audience.</p>
+                    <div className='space-x-4 lg:mt-4 mb-10'>
+                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[16px] md:text-[14px] lg:text-[20px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                    </div>
+                  </div>
+                </div>
+                <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image4} alt='image2'/>
+                <div className="w-full text-center md:text-left lg:text-left">
+                  <div className="card-body">
+                    <h4 className="mb-2 mt-4 text-[20px] md:text-[16px] lg:text-[24px] lg:mt-[-9px] font-bold">Website Hosting & Domain</h4>
+                    <p className="text-[18px] mb-2 md:text-[14px] lg:text-[22px]">We will connect your website to a webhost, as well as configure and purchase your domain to keep your website safe and secure.</p>
+                    <div className='space-x-4 lg:mt-4 mb-10'>
+                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[16px] md:text-[14px] lg:text-[20px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className='md:flex cols-3 mt-10 md:mt-[75px] md:space-x-4 md:mb-[125px] lg:space-x-6 lg:mt-[100px] lg:mb-[100px]'>
+                <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image5} alt='image2'/>
+                <div className="w-full text-center md:text-left lg:text-left">
+                  <div className="card-body">
+                    <h4 className="mb-2 mt-4 text-[20px] md:text-[16px] lg:text-[24px] lg:mt-[-9px] font-bold">Website Maintenance</h4>
+                    <p className="text-[18px] mb-2 md:text-[14px] lg:text-[22px]">We will offer you ongoing support after completion to keep your website running smoothly.</p>
+                    <div className='space-x-4 lg:mt-4 mb-10'>
+                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[16px] md:text-[14px] lg:text-[20px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                    </div>
+                  </div>
+                </div>
+                <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image6} alt='image2'/>
+                <div className="w-full text-center md:text-left lg:text-left">
+                  <div className="card-body">
+                    <h4 className="mb-2 mt-4 text-[20px] md:text-[16px] lg:text-[24px] lg:mt-[-9px] font-bold">Web Responsiveness & Web Accessibility</h4>
+                    <p className="text-[18px] mb-2 md:text-[14px] lg:text-[22px]">We will develop a website that is responsive on multiple screen sizes, and is ADA compliant.</p>
+                    <div className='space-x-4 lg:mt-4 mb-10'>
+                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[16px] md:text-[14px] lg:text-[20px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                    </div>
+                  </div>
+                </div>
+                <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image3} alt='image2'/>
+                <div className="w-full text-center md:text-left lg:text-left" >
+                  <div className="card-body">
+                    <h4 className="mb-2 mt-4 text-[20px] md:text-[16px] lg:text-[24px] lg:mt-[-9px] font-bold">Digital Marketing</h4>
+                    <p className="text-[18px] mb-2 md:text-[14px] lg:text-[22px]">We will set up your business profiles on your requested social media platforms, and post your requested content daily.</p>
+                    <div className='space-x-4 lg:mt-4 mb-10' id="Pricing">
+                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[16px] md:text-[14px] lg:text-[20px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </motion.div>
 
-                {/* Condition Cards Here */}
-                <motion.div 
-                className="w-full text-center mx-[40px] md:mx-[80px] md:mt-[80px]"
-                initial="visible"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0, duration: .5 }}
-                variants={{
-                  hidden: { opacity: 0, x: -90 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                >
-                  <ul className="mb-[-80px]">
-                    {conditions.map((item: ClassType, index) => (
-                      <Conditions 
-                      key={`${item.name}-${index}`}
-                      name={item.name}
-                      image={item.image}
-                      />
-                    ))}
-                  </ul>
-                </motion.div>
-              </motion.div>
-            </section> 
+          <section className="bg-slate-100 dark:bg-gray-900" >
+            <div className="py-8 px-4 md:mx-[100px] md:mt-[-50px] mx-auto lg:mx-[200px] max-w-screen-xl lg:py-16 lg:px-6">
+                <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12 md:px-[125px] md:mt-[50px] md:mb-[50px]">
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Pricing</h2>
+                    <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[31px] md:mt-[50px]">View our various monthly and annual plans below to determine which service best meets the needs of your business.</p>
+                </div>
+                <div className="flex space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 className="mb-4 text-2xl font-semibold">Startup Pack</h3>
+                        <div className="flex justify-center items-baseline my-8">
+                            <span className="mr-2 text-5xl font-extrabold">$14.99</span>
+                            <span className="text-[#011C43] dark:text-gray-400">/mo</span>
+                        </div>
+                        
+                        <ul role="list" className="mb-8 space-y-4 text-left">
+                            <li className="flex items-center space-x-3">
+                        
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>A custom website tailored to your business with up to 5 pages of content</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                        
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>1 revision post website completion</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                        
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Ongoing website Maintenance & Support</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                        
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Search engine optimization & visibility</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Social Media posting (1 post per account, per day)</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Web Hosting and Domain Configuration</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>Fully Responsive, and Web Accessible</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                              <AiOutlineClose />
+                              <span>E-Commerce functionality</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <AiOutlineClose />
+                                <span>Blog functionality</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <AiOutlineClose />
+                                <span>Booking functionality</span>
+                            </li>
+                            <li className="flex items-center space-x-3">
+                                <AiOutlineClose />
+                                <span>User Authentication</span>
+                            </li>
+                        </ul>
+                        <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
+                    </div>
+                    
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 className="mb-4 text-2xl font-semibold">Standard Pack</h3>
+                        <div className="flex justify-center items-baseline my-8">
+                            <span className="mr-2 text-5xl font-extrabold">$18.99</span>
+                            <span className="text-[#011C43] dark:text-gray-400">/mo</span>
+                        </div>
+                        
+                        <ul role="list" className="mb-8 space-y-4 text-left">
+                          <li className="flex items-center space-x-3">
+                          
+                          <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>A custom website tailored to your business with up to 10 pages of content</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                      
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>1 revision post website completion</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                      
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Ongoing website Maintenance & Support</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                      
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Search engine optimization & visibility</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Social Media posting (1 post per account, per day)</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Web Hosting and Domain Configuration</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Fully Responsive, and Web Accessible</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>E-Commerce functionality</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Blog functionality</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <AiOutlineClose />
+                              <span>Booking functionality</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <AiOutlineClose />
+                              <span>User Authentication</span>
+                          </li>
+                        </ul>
+                        <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
+                    </div>
+                    
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
+                        <h3 className="mb-4 text-2xl font-semibold">Premium Pack</h3>
+                        <div className="flex justify-center items-baseline my-8">
+                            <span className="mr-2 text-5xl font-extrabold">$24.99</span>
+                            <span className="text-[#011C43] dark:text-gray-400">/mo</span>
+                        </div>
+                        
+                        <ul role="list" className="mb-8 space-y-4 text-left">
+                          <li className="flex items-center space-x-3">
+                          
+                          <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                          <span>A custom website tailored to your business with up to 20 pages of content</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                      
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>1 revision post website completion</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                      
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Ongoing website Maintenance & Support</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                      
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Search engine optimization & visibility</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Social Media posting (2 posts per account, per day)</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Web Hosting and Domain Configuration</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Fully Responsive, and Web Accessible</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>E-Commerce functionality</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Blog functionality</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Booking functionality</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>User Authentication</span>
+                          </li>
+                          <li className="flex items-center space-x-3">
+                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF] dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                              <span>Sign up form for email subscribers, and weekly newsletter</span>
+                          </li>
+                        </ul>
+                        <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
+                    </div>
+                </div>
+            </div>
+          </section>
 
             {/* BENEFITS GRAPHICS AND DESCRIPTION HERE */}
             <motion.div 
-             className='mt-[100px] mx-8 items-center justify-between gap-20 md:mt-[100px] md:flex'
+             className='mt-[100px] mx-8 items-center justify-center gap-20 md:mt-[100px] md:flex'
              initial="visible"
              whileInView="visible"
              viewport={{ once: true, amount: 0.5 }}
@@ -221,7 +388,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
             }}
             >
                 {/* DESCRIPTION HERE */}
-                <div className='mb-[60px] md:mb-[60px] lg:mb-16 md:mx-[75px] lg:mx-[135px]'>
+                <div className='mb-[60px] md:mb-[60px] lg:mb-16 md:mx-[75px] lg:mx-[135px]'
+                id='Projects'>
                     {/* TITLE HERE */}
                     <div className='relative'>
                         <div className='mt-[100px] md:mt-[20px] lg:mb-[80px]'>
@@ -236,42 +404,98 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                visible: { opacity: 1, x: 0 },
                              }}
                             >
-                                <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">Testimonials
-                                </h2>
-                                <p className="font-thin mb-10 md:mb-[-15px] my-14 text-[18px] md:text-[21px] lg:text-[30px] lg:mt-[80px]">
-                                Read what our patients have to say about their experiences with our treatments and services. We are proud to have earned their trust and loyalty. We hope that their stories will help you make an informed decision when choosing us for your pelvic or orthopedic needs.</p>
+                              <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+                                  <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Completed Projects</h2>
+                                  <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[31px] md:mt-[50px]">View some of our most recently completed projects by clicking an industry tab below.</p>
+                              </div>
                             </motion.div>
+                              <div className=''>
+                                <motion.div 
+                                  className='text-center space-x-8'
+                                  initial="visible"
+                                  whileInView="visible"
+                                  viewport={{ once: true, amount: 0.5 }}
+                                  transition={{ delay: 0.5, duration: 0.5 }}
+                                  variants={{
+                                    hidden: { opacity: 0, x: 90 },
+                                    visible: { opacity: 1, x: 0 },
+                                  }}
+                                >
+                                  <button
+                                    onClick={() => handleTab('construction')}
+                                    className={`${tab.active === 'construction' ? 'active' : ''} rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-white hover:opacity-30 transition duration-500 ml-1 md:ml-1`}
+                                  >
+                                    Construction
+                                  </button>
+                                  <button
+                                    onClick={() => handleTab('realestate')}
+                                    className={`${tab.active === 'realestate' ? 'active' : ''} rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1`}
+                                  >
+                                    Real Estate
+                                  </button>
+                                  <button
+                                    onClick={() => handleTab('health')}
+                                    className={`${tab.active === 'health' ? 'active' : ''} rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1`}
+                                  >
+                                    Health Care
+                                  </button>
+                                </motion.div>
+                                <div>
+                                  {tab.active === 'construction' && (
+                                    <motion.div
+                                     className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
+                                     initial="visible"
+                                      whileInView="visible"
+                                      viewport={{ once: true, amount: 0.5 }}
+                                      transition={{ delay: 0, duration: 1 }}
+                                      variants={{
+                                        hidden: { opacity: 0, x: 90 },
+                                        visible: { opacity: 1, x: 0 },
+                                      }}
+                                    >
+                                      <Image src={colibri} alt="tab image" className="md:mt-[50px]" />
+                                      <h4 className='text-[20px] md:text-[22px] lg:text-[31px] md:mb-[10px] font-bold'>Objective</h4>
+                                      <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[31px] '>Colibri needed a website that showcased their numerous years of experience, brand, and services. It was important to Colibri that they could be found easily on Google.</p>
+                                    </motion.div>
+                                  )}
+                                  {tab.active === 'realestate' && (
+                                  <motion.div
+                                    className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
+                                    initial="visible"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.5 }}
+                                    transition={{ delay: 0, duration: 1 }}
+                                    variants={{
+                                      hidden: { opacity: 0, x: 90 },
+                                      visible: { opacity: 1, x: 0 },
+                                    }}
+                                  >
+                                    <Image src={vtr} alt="tab image" className="md:mt-[50px]"/>
+                                    <h4 className='text-[20px] md:text-[22px] lg:text-[31px] md:mb-[10px] font-bold'>Objective</h4>
+                                    <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[31px] '>Vargas Trihn Realty needed a website that showcased their brand and services as a newly starting practice. It was important to Peace Pelvic Health that they could be found on Google.</p>
+                                  </motion.div>
+                                  )}
+                                  {tab.active === 'health' && (
+                                    <motion.div
+                                    className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
+                                    initial="visible"
+                                    whileInView="visible"
+                                    viewport={{ once: true, amount: 0.5 }}
+                                    transition={{ delay: 0, duration: 1 }}
+                                    variants={{
+                                      hidden: { opacity: 0, x: 90 },
+                                      visible: { opacity: 1, x: 0 },
+                                    }}
+                                    >
+                                      <Image src={peace} alt="tab image" className="md:mt-[50px]"/>
+                                      <h4 className='text-[20px] md:text-[22px] lg:text-[31px] md:mb-[10px] font-bold'>Objective</h4>
+                                      <p className='md:mb-[10px] text-[18px] md:text-[18px] lg:text-[28px]'>Peace Pelvic Health needed a website that showcased their experience, brand, and services. It was important to Xavier and Angela Vargas that they could be found easily on Google.</p>
+                                    </motion.div>                                  )}
+                                </div>
+                              </div>
+                              
                         </div>
                     </div>
-
-                    {/* DESCRIPTION PT2 HERE */}
-                    <motion.div
-                        className=''
-                        initial="visible"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ delay: 0.5, duration: .5 }}
-                        variants={{
-                        hidden: { opacity: 0, x: 90 },
-                        visible: { opacity: 1, x: 0 },
-                        }}
-                    >
-                        <section id="clients" className={`sm:py-16 flex justify-center items-center`}>
-                            <motion.div 
-                            className="flex w-full relative flex-wrap z-[1]"
-                            initial="visible"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.5 }}
-                            transition={{ delay: .75, duration: 0.5 }}
-                            variants={{
-                            hidden: { opacity: 0, x: -50 },
-                            visible: { opacity: 1, x: 0 },
-                            }} 
-                            >
-                            {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}    
-                            </motion.div>
-                        </section>
-                    </motion.div>
                 </div>                
             </motion.div>
         </motion.div>

@@ -21,13 +21,24 @@ const CTA = ({ setSelectedPage }: Props) => {
         visible: { opacity: 1, x: 0},
       }}
     >
-        <div className="relative isolate overflow-hidden bg-[#011C43] px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+        <div className="relative isolate overflow-hidden bg-[#56AEFF] px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <div className="mb-14 md:mb-[80px] mx-auto max-w-md text-center lg:mt-[90px] lg:text-center">
-                <h2 className="font-bold tracking-tight text-[#F3DFC1] text-[28px] md:text-[30px] lg:text-[48px]">Schedule Your Evaluation Today</h2>
-                <p className="font-thin text-[20px] md:text-[22px] lg:text-[30px] mt-6 tracking-tight text-[#F3DFC1]">Patients can schedule a free 15 minute consultation. Let us at Peace Pelvic Health guide you on your healing journey!</p>
-                <div className="mt-6 flex items-center justify-center gap-x-6">
-                    <Link href='/Contact' className="mt-2 rounded-md bg-[#dea54b] px-10 py-3 lg:px-12 lg:py-4 lg:text-[24px] font-semibold text-[#160F29] hover:bg-[#F3DFC1] hover:text-[#160F29] transition duration-500 ml-1">Book Appointment</Link>
-                </div>
+              <div className="max-w-screen-xl px-4 py-4 mx-auto text-center lg:py-16 lg:px-6">
+                  <dl className="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
+                      <div className="flex flex-col items-center justify-center">
+                          <dt className="mb-2 text-3xl text-[#011C43] md:text-4xl font-extrabold">73M+</dt>
+                          <dd className="font-light text-[#011C43] dark:text-gray-400">developers</dd>
+                      </div>
+                      <div className="flex flex-col items-center justify-center">
+                          <dt className="mb-2 text-3xl text-[#011C43] md:text-4xl font-extrabold">1B+</dt>
+                          <dd className="font-light text-[#011C43] dark:text-gray-400">contributors</dd>
+                      </div>
+                      <div className="flex flex-col items-center justify-center">
+                          <dt className="mb-2 text-3xl text-[#011C43] md:text-4xl font-extrabold">4M+</dt>
+                          <dd className="font-light text-[#011C43] dark:text-gray-400">organizations</dd>
+                      </div>
+                  </dl>
+              </div>
             </div>
         </div>
     </motion.div>

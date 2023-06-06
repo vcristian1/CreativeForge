@@ -26,112 +26,28 @@ const ContactForm = ({ setSelectedPage }: Props) => {
     }
 
     return (
-    <div id="Contact" className='bg-[#ffffff] h-full w-full'>
-        <section className=''>
-            <div className='w-5/6 mx-auto'>
-                <motion.div
-                className=''
-                >
-                    {/* HEADER HERE */}
-                    <motion.div
-                    className="md:w-4/5 w-full"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{ duration: 0.5 }}
-                    variants={{
-                        hidden: { opacity: 0, x: -90 },
-                        visible: { opacity: 1, x: 0 },
-                    }}
-                    >
-                        <br></br>
-                        <br></br>
-                        <h2 className="text-4xl tracking-tight text-[#160F29] md:text-4xl lg:text-6xl">
-                            Contact
-                        </h2>
-                        <p className="font-thin mb-10 md:mb-[-15px] my-10 text-[18px] md:text-[22px] lg:text-[30px] lg:mt-[80px]">
-                        With over 10 years of experience, let Peace Pelvic Health guide you on your healing journey. Contact us today to schedule an evaluation and please specify preferred availability.
-                        </p>
-                    </motion.div>
-
-                    {/* FORM AND IMAGE HERE */}
-                    <div className="mt-10 justify-between gap-8 md:flex">
-                        <motion.div
-                        className='mt-10 basis-3/5 md:mt-0 '
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
-                        transition={{ duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: -90 },
-                            visible: { opacity: 1, x: 0 },
-                        }}
-                        >
-                            <form 
-                            action="https://formsubmit.co/email@email.com"
-                            target="_blank"
-                            onSubmit={onSubmit}
-                            method="POST"
-                            
-                            >
-                                <input className={inputStyles} type="text" placeholder='Name' required {...register ("name", {
-                                    required: true, maxLength: 100,
-                                })}/>
-                                {errors.name && (
-                                    <p className="mt-1 text-primary-500">
-                                    {errors.name.type === "required" && "This field is required."}
-                                    {errors.name.type === "maxLength" && "Max Length is 100 characters."}
-                                    </p>
-                                )}
-
-                                <input className={inputStyles} type="text" placeholder='Email' required {...register ("email", {
-                                    required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                                })}/>
-                                {errors.email && (
-                                    <p className="mt-1 text-primary-500">
-                                    {errors.email.type === "required" && "This field is required."}
-                                    {errors.email.type === "pattern" && "Invalid email address."}
-                                    </p>
-                                )}
-
-                                <input className={inputStyles} type="text" placeholder='Phone Number' required {...register ("phone", {
-                                    required: true
-                                })}/>
-                                {errors.phone && (
-                                    <p className="mt-1 text-primary-500">
-                                    {errors.phone.type === "required" && "This field is required."}
-                                    </p>
-                                )}
-
-                                <textarea
-                                    className={inputStyles}
-                                    placeholder="What brings you in?"
-                                    rows={4}
-                                    cols={50}
-                                    {...register("message", {
-                                    required: true,
-                                    maxLength: 2000,
-                                    })}
-                                />
-                                {errors.message && (
-                                    <p className="mt-1 text-primary-500">
-                                    {errors.message.type === "required" &&
-                                        "This field is required."}
-                                    {errors.message.type === "maxLength" &&
-                                        "Max length is 2000 char."}
-                                    </p>
-                                )}
-
-                                <button
-                                    type="submit"
-                                    className="rounded-md bg-[#246a73] px-10 py-2 md:px-12 md:py-3 lg:px-12 lg:py-4 lg:text-[26px] font-semibold text-[#FFFFFF] hover:bg-[#dea54b] hover:text-[#160F29] transition duration-500 mt-10 md:mb-[50px]"
-                                >
-                                    Submit
-                                </button>   
-                            </form>
-                        </motion.div>
+    <div id="Contact" className='bg-slate-100 h-full w-full'>
+        <section>
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12 md:mt-[50px]">
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Contact Us</h2>
+                    <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[31px] md:mt-[50px]">Are you looking to start a website development and design project?.</p>
+                </div>
+                <form action="https://formsubmit.co/cristian.v0223@gmail.com" className="space-y-8 md:mb-[50px]">
+                    <div>
+                        <label className="block mb-2 text-sm font-thin text-gray-900 dark:text-gray-300">Email</label>
+                        <input type="email" id="email" className="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="name@creativeforge.com" required />
                     </div>
-                </motion.div>
+                    <div>
+                        <label  className="block mb-2 text-sm font-thin text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
+                    </div>
+                    <div className="sm:col-span-2">
+                        <label className="block mb-2 text-sm font-thin text-gray-900 dark:text-gray-400">Your Message</label>
+                        <textarea id="message" rows={6} className="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Send Message</button>
+                </form>
             </div>
         </section>
     </div>

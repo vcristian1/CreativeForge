@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
 
   return (
-    <div className='bg-[#fffcf2] h-full w-full'>
+    <div className='h-full w-full'>
         <Navbar 
          isTopOfPage={isTopOfPage}
          selectedPage={selectedPage}
