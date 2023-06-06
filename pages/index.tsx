@@ -34,7 +34,7 @@ function App() {
         <title>
           Creative Forge
         </title>
-        <link rel="icon" type="image/svg+xml" href="/PEACE-PELVIC-HEALTH3.svg" />
+        <link rel="icon" type="image/svg+xml" href="/HomePageGraphic.svg" />
         <meta
           name="description"
           content="Creative Forge is a full service web design and development studio specializing in designing and developing custom and effective web applications for businesses and individuals that drive growth."
