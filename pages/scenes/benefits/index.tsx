@@ -229,7 +229,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                 <span className='lg:text-[22px]'>User Authentication</span>
                             </li>
                         </ul>
-                        <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
+                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1Xu6hq9PawUcbYDxxnFBtVEPR6uVzMlbzcIF5tUHJBYLl8OD6AjMXGs4y#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nY19gM3dMY19zY0lNMjI3MWJtJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                     
                     <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
@@ -297,10 +297,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <span className='lg:text-[22px]'>User Authentication</span>
                           </li>
                         </ul>
-                        <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
+                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1HvxVN49CTLYlv8BzhipDSMbvWwvZFvzUGmgYnVs0H1Vmw7zfAlB4J9jo#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZks3YVBkPX02YlVJNlBUMG5oJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                     
-                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-slate-50 rounded-xl border-slate-100 border-2 shadow">
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
                         <h3 className="mb-4 text-2xl font-semibold lg:text-[24px]">Premium Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$24.99</span>
@@ -369,7 +369,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <span className='lg:text-[22px]'>Sign up form for email subscribers, and weekly newsletter</span>
                           </li>
                         </ul>
-                        <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
+                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1u0yENSNQBUoEW3G2udKdI28w1oeDODl00mv3I8fFQvCA6EJsjq65Vbdk#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZEBQPX9UNmZPPGtvZG9gPERBJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                 </div>
             </div>

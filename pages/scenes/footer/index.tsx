@@ -31,7 +31,7 @@ const Footer = ({ setSelectedPage }: Props) => {
                     <h2 className="mb-6 text-[16px] md:text-md lg:text-[22px] text-[#011C43] font-bold">Additional Links</h2>
                     <ul className="text-gray-600 font-medium">
                         <li className="mb-4">
-                            <Link href="/FAQ" className="hover:underline lg:text-[20px]">Faq</Link>
+                            <Link href="/FAQ" className="hover:underline lg:text-[20px]">FAQ</Link>
                         </li>
                     </ul>
                 </div>
