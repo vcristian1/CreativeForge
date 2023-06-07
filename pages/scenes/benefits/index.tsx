@@ -98,7 +98,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <h4 className="mb-2 mt-4 text-[22px] md:text-[16px] lg:text-[26px] lg:mt-[-9px] font-bold">SEO Optimization</h4>
                     <p className="text-[18px] mb-2 md:text-[14px] lg:text-[24px]">Get the most out of your SEO by working with a company who understands how Google indexes the web.</p>
                     <div className='space-x-4 lg:mt-4 mb-10'>
-                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                      <Link href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></Link>
                     </div>
                   </div>
                 </div>
@@ -108,7 +108,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <h4 className="mb-2 mt-4 text-[22px] md:text-[16px] lg:text-[26px] lg:mt-[-9px] font-bold">Web Design</h4>
                     <p className="text-[18px] mb-2 md:text-[14px] lg:text-[24px]">We will design visually impressive and functional online experiences that are catered to your target audience.</p>
                     <div className='space-x-4 lg:mt-4 mb-10'>
-                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                      <Link href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></Link>
                     </div>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <h4 className="mb-2 mt-4 text-[22px] md:text-[16px] lg:text-[26px] lg:mt-[-9px] font-bold">Website Hosting & Domain</h4>
                     <p className="text-[18px] mb-2 md:text-[14px] lg:text-[24px]">We will connect your website to a webhost, as well as configure your domain.</p>
                     <div className='space-x-4 lg:mt-4 mb-10'>
-                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                      <Link href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></Link>
                     </div>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <h4 className="mb-2 mt-4 text-[22px] md:text-[16px] lg:text-[26px] lg:mt-[-9px] font-bold">Website Maintenance</h4>
                     <p className="text-[18px] mb-2 md:text-[14px] lg:text-[24px]">We will offer you ongoing support after completion to keep your website running smoothly.</p>
                     <div className='space-x-4 lg:mt-4 mb-10'>
-                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                      <Link href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></Link>
                     </div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <h4 className="mb-2 mt-4 text-[22px] md:text-[16px] lg:text-[26px] lg:mt-[-9px] font-bold">Web Responsiveness & Web Accessibility</h4>
                     <p className="text-[18px] mb-2 md:text-[14px] lg:text-[24px]">We will develop a website that is responsive on multiple screen sizes, and is ADA compliant.</p>
                     <div className='space-x-4 lg:mt-4 mb-10'>
-                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                      <Link href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></Link>
                     </div>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <h4 className="mb-2 mt-4 text-[22px] md:text-[16px] lg:text-[26px] lg:mt-[-9px] font-bold">Digital Marketing</h4>
                     <p className="text-[18px] mb-2 md:text-[14px] lg:text-[24px]">We will set up your business profiles on your requested social media platforms, and post your requested content daily.</p>
                     <div className='space-x-4 lg:mt-4 mb-10' id="Pricing">
-                      <a href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></a>
+                      <Link href="/Services" className="text-[#56AEFF] hover:opacity-50 transition duration-500 text-[18px] md:text-[14px] lg:text-[22px]">Learn More <span className='text-[#56AEFF]'>{">"}</span></Link>
                     </div>
                   </div>
                 </div>
