@@ -24,7 +24,7 @@ const CTA = () => {
                 <h2 className="font-bold tracking-tight text-[#160F29] text-[28px] md:text-[30px] lg:text-[48px]">Schedule Your Free Consultation Today</h2>
                 <p className="font-thin text-[20px] md:text-[22px] lg:text-[30px] mt-6 tracking-tight text-[#160F29]">A business’ online presence has a massive impact on its success. Some businesses don’t realize that a majority of their customers will visit their website prior to making a purchase.</p>
                 <div className="mt-6 flex items-center justify-center gap-x-6">
-                    <AnchorLink href='#Contact' className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Book Appointment</AnchorLink>
+                    <AnchorLink href='#Contact' className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Contact Us</AnchorLink>
                 </div>
             </div>
             <div>

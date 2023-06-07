@@ -38,7 +38,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                         {/* Inner Left Side (All Links) */}
                         <div className={`md:ml-[150px] lg:ml-[330px] flex gap-10 md:gap-12 text-[14px] md:text-[16px] lg:text-[24px] `}>
                             <Link href="/" className="font-thin xs:text-[14px] sm:text-[14px] md:text-[16px] hover:text-[#56AEFF] text-[#011C43] transition duration-500 lg:text-[24px]">Home</Link>
-                            <AnchorLink href="#Services">Services</AnchorLink>
+                            <Link href="/Services">Services</Link>
                             <AnchorLink href="#Pricing">Pricing</AnchorLink>
                             <AnchorLink href="#Projects">Projects</AnchorLink>
                             <AnchorLink href="#Contact">Contact</AnchorLink>

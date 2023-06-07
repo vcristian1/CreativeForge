@@ -78,7 +78,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 {/* Headings Here */}
                 <motion.div 
                 className="md:mt-[-100px] md:px-[175px]"
-                initial="visible"
+                initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
@@ -91,7 +91,17 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">From designing to developing, we are committed at Creative Forge to building you a stunning website that drives your business forward.</p>
                 </motion.div>
               </div>
-              <div className='md:flex cols-3 mt-16 md:mt-[75px] md:space-x-4 lg:space-x-6 lg:mt-[100px]'>
+              <motion.div 
+              className='md:flex cols-3 mt-16 md:mt-[75px] md:space-x-4 lg:space-x-6 lg:mt-[100px]'
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              variants={{
+                  hidden: { opacity:0, x:-50},
+                  visible: { opacity: 1, x: 0},
+              }}
+              >
                 <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image2} alt='image2'/>
                 <div className="w-full text-center md:text-left lg:text-left">
                   <div className="card-body">
@@ -122,8 +132,18 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className='md:flex cols-3 mt-10 md:mt-[75px] md:space-x-4 md:mb-[125px] lg:space-x-6 lg:mt-[100px] lg:mb-[100px]'>
+              </motion.div>
+              <motion.div 
+              className='md:flex cols-3 mt-10 md:mt-[75px] md:space-x-4 md:mb-[125px] lg:space-x-6 lg:mt-[100px] lg:mb-[100px]'
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+              variants={{
+                  hidden: { opacity:0, x:-50},
+                  visible: { opacity: 1, x: 0},
+              }}
+              >
                 <Image className='ml-[115px] md:ml-0 lg:ml-0 h-24 w-24 md:h-32 md:w-32 lg:h-48 lg:w-48 rounded' src={image5} alt='image2'/>
                 <div className="w-full text-center md:text-left lg:text-left">
                   <div className="card-body">
@@ -154,17 +174,27 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
           </motion.div>
 
           <section className="bg-slate-50" >
             <div className="py-8 px-4 md:mx-[100px] md:mt-[-50px] mx-auto lg:mx-[200px] max-w-screen-xl lg:py-16 lg:px-6">
-                <div className="mx-auto max-w-screen-md text-center mb-8 mt-[50px] lg:mb-12 px-4 md:px-[125px] lg:px-0 md:mt-[50px] md:mb-[50px]">
+                <motion.div 
+                className="mx-auto max-w-screen-md text-center mb-8 mt-[50px] lg:mb-12 px-4 md:px-[125px] lg:px-0 md:mt-[50px] md:mb-[50px]"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                variants={{
+                    hidden: { opacity:0, x:-50},
+                    visible: { opacity: 1, x: 0},
+                }}
+                >
                     <h2 className="mb-4 text-4xl tracking-tight md:text-[38px] font-extrabold text-gray-900 lg:text-[50px]">Our Pricing</h2>
                     <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">View our various monthly plans below to determine which package best meets the needs of your business.</p>
-                </div>
+                </motion.div>
                 <div className="md:flex space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-                    <div className="md:flex md:flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow xl:p-8">
+                    <div className="md:flex md:mt-[30px] md:flex-col p-6 mx-auto text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow xl:p-8">
                         <h3 className="mb-4 text-2xl font-semibold lg:text-[24px]">Startup Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$14.99</span>
@@ -185,16 +215,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
                             <li className="flex items-center space-x-3">
                         
                                 <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                <span className='lg:text-[22px]'>Ongoing website Maintenance & Support</span>
+                                <span className='lg:text-[22px]'>Ongoing website Maintenance/Support</span>
                             </li>
                             <li className="flex items-center space-x-3">
                         
                                 <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                 <span className='lg:text-[22px]'>Search engine optimization & visibility</span>
-                            </li>
-                            <li className="flex items-center space-x-3">
-                                <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                                <span className='lg:text-[22px]'>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -228,11 +254,15 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                 <AiOutlineClose />
                                 <span className='lg:text-[22px]'>User Authentication</span>
                             </li>
+                            <li className="flex items-center space-x-3">
+                              <AiOutlineClose className='h-5 w-5 md:h-6 md:w-6'/>
+                              <span className='lg:text-[22px]'>Sign up form for email subscribers, and weekly newsletter</span>
+                          </li>
                         </ul>
                         <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1Xu6hq9PawUcbYDxxnFBtVEPR6uVzMlbzcIF5tUHJBYLl8OD6AjMXGs4y#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nY19gM3dMY19zY0lNMjI3MWJtJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                     
-                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
+                    <div className="flex flex-col p-6 mx-auto text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
                         <h3 className="mb-4 text-2xl font-semibold lg:text-[24px]">Standard Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$19.99</span>
@@ -259,10 +289,6 @@ const Benefits = ({ setSelectedPage }: Props) => {
                       
                               <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                               <span className='lg:text-[22px]'>Search engine optimization & visibility</span>
-                          </li>
-                          <li className="flex items-center space-x-3">
-                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                              <span className='lg:text-[22px]'>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
                           </li>
                           <li className="flex items-center space-x-3">
                               <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -296,6 +322,10 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <AiOutlineClose />
                               <span className='lg:text-[22px]'>User Authentication</span>
                           </li>
+                          <li className="flex items-center space-x-3">
+                              <AiOutlineClose className='h-5 w-5 md:h-6 md:w-6'/>
+                              <span className='lg:text-[22px]'>Sign up form for email subscribers, and weekly newsletter</span>
+                          </li>
                         </ul>
                         <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1HvxVN49CTLYlv8BzhipDSMbvWwvZFvzUGmgYnVs0H1Vmw7zfAlB4J9jo#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZks3YVBkPX02YlVJNlBUMG5oJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
@@ -327,10 +357,6 @@ const Benefits = ({ setSelectedPage }: Props) => {
                       
                               <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                               <span className='lg:text-[22px]'>Search engine optimization & visibility</span>
-                          </li>
-                          <li className="flex items-center space-x-3">
-                              <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                              <span className='lg:text-[22px]'>Set up for Google, Yelp, Facebook, & Instagram business profiles</span>
                           </li>
                           <li className="flex items-center space-x-3">
                               <svg className="flex-shrink-0 w-5 h-5 text-[#56AEFF]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -412,7 +438,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <div className=''>
                                 <motion.div 
                                   className='text-center md:space-x-8 flex md:justify-center'
-                                  initial="visible"
+                                  initial="hidden"
                                   whileInView="visible"
                                   viewport={{ once: true, amount: 0.5 }}
                                   transition={{ delay: 0.5, duration: 0.5 }}
@@ -444,7 +470,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                   {tab.active === 'construction' && (
                                     <motion.div
                                      className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
-                                     initial="visible"
+                                     initial="hidden"
                                       whileInView="visible"
                                       viewport={{ once: true, amount: 0.5 }}
                                       transition={{ delay: 0, duration: 1 }}
@@ -461,7 +487,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                   {tab.active === 'realestate' && (
                                   <motion.div
                                     className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
-                                    initial="visible"
+                                    initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.5 }}
                                     transition={{ delay: 0, duration: 1 }}
@@ -478,7 +504,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                   {tab.active === 'health' && (
                                     <motion.div
                                     className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
-                                    initial="visible"
+                                    initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.5 }}
                                     transition={{ delay: 0, duration: 1 }}
@@ -494,7 +520,6 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                   )}
                                 </div>
                               </div>
-                              
                         </div>
                     </div>
                 </div>                
