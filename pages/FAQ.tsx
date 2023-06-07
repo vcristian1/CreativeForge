@@ -34,7 +34,7 @@ const FAQ = () => {
             />
       </Head>
       <Layout setSelectedPage={setSelectedPage}>
-          <section className="mx-4 py-[110px] md:mx-[105px] md:py-[100px] lg:mt-[100px]">
+          <section className="mx-4 mt-10 py-[110px] md:mx-[105px] md:py-[100px] lg:mt-[100px]">
             <Link className="text-[26px] md:text-[32px] lg:text-[38px] hover:opacity-50 transition duration-500" href="/">↵</Link>
             <motion.div 
               className="py-8 px-4 lg:mx-12 mx-auto max-w-screen-xl sm:py-16 lg:px-6 md:mb-[-100px]"

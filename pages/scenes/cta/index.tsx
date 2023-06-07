@@ -1,14 +1,8 @@
 import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-type Props = {
-    setSelectedPage: (value: SelectedPage) => void;
-}
-
-const CTA = ({ setSelectedPage }: Props) => {
+const CTA = () => {
   return (
     <motion.div 
       className='w-full'

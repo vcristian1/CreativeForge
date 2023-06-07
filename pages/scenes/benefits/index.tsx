@@ -161,7 +161,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div className="py-8 px-4 md:mx-[100px] md:mt-[-50px] mx-auto lg:mx-[200px] max-w-screen-xl lg:py-16 lg:px-6">
                 <div className="mx-auto max-w-screen-md text-center mb-8 mt-[50px] lg:mb-12 px-4 md:px-[125px] lg:px-0 md:mt-[50px] md:mb-[50px]">
                     <h2 className="mb-4 text-4xl tracking-tight md:text-[38px] font-extrabold text-gray-900 lg:text-[50px]">Our Pricing</h2>
-                    <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">View our various monthly and annual plans below to determine which service best meets the needs of your business.</p>
+                    <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">View our various monthly plans below to determine which package best meets the needs of your business.</p>
                 </div>
                 <div className="md:flex space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
                     <div className="md:flex md:flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow xl:p-8">
@@ -235,7 +235,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
                         <h3 className="mb-4 text-2xl font-semibold lg:text-[24px]">Standard Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
-                            <span className="mr-2 text-5xl font-extrabold">$18.99</span>
+                            <span className="mr-2 text-5xl font-extrabold">$19.99</span>
                             <span className="text-[#011C43] dark:text-gray-400">/mo</span>
                         </div>
                         
@@ -300,7 +300,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         <a href="#" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</a>
                     </div>
                     
-                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
+                    <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-slate-50 rounded-xl border-slate-100 border-2 shadow">
                         <h3 className="mb-4 text-2xl font-semibold lg:text-[24px]">Premium Pack</h3>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold">$24.99</span>
@@ -455,7 +455,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                     >
                                       <Image src={colibri} alt="tab image" className="mt-[10px] md:mt-[50px]" />
                                       <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[34px] md:mb-[10px] font-bold md:text-left'>Objective</h4>
-                                      <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[32px] md:text-left'>Colibri needed a website that showcased their numerous years of experience, brand, and services. It was important to Colibri that they could be found easily on Google.</p>
+                                      <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[32px] md:text-left'>Colibri{"'"}s website objective was to provide a comprehensive online resource for customers looking for construction services. Colibri aimed to showcase their portfolio of projects, highlight their expertise in the industry, and provide an easy-to-use platform for customers to request quotes and book appointments. It was also important to Colibri that the website could be found easily on Google.</p>
                                     </motion.div>
                                   )}
                                   {tab.active === 'realestate' && (
@@ -472,7 +472,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                   >
                                     <Image src={vtr} alt="tab image" className="mt-[10px] md:mt-[50px]"/>
                                     <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[34px] md:mb-[10px] font-bold md:text-left'>Objective</h4>
-                                    <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[32px] md:text-left'>Vargas Trihn Realty needed a website that showcased their brand and services as a newly starting practice. It was important to Peace Pelvic Health that they could be found on Google.</p>
+                                    <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[32px] md:text-left'>Vargas Trihn Realty{"'"}s website objective was to provide a comprehensive online resource for customers looking to buy or sell a home without an existing agent. Their goal was to showcase their previus transactions, highlight their expertise in the industry, and provide an easy-to-use platform for customers to request quotes, showings, and more. It was also important to Vargas Trinh Realty that they could easily be found on Google.</p>
                                   </motion.div>
                                   )}
                                   {tab.active === 'health' && (
@@ -489,7 +489,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                     >
                                       <Image src={peace} alt="tab image" className="mt-[10px] md:mt-[50px]"/>
                                       <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[34px] md:mb-[10px] font-bold md:text-left'>Objective</h4>
-                                      <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[32px] md:text-left'>Peace Pelvic Health needed a website that showcased their experience, brand, and services. It was important to Xavier and Angela Vargas that they could be found easily on Google.</p>
+                                      <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[32px] md:text-left'>Peace Pelvic Health{"'"}s website objective was to provide a comprehensive online resource for patients seeking health care services. Their goal was to showcase their range of services, highlight their expertise in the field, and provide an easy-to-use platform for patients to learn more about Pelvic Floor Therapy, and book appointments. It was also important to Peace Pelvic Health that their website could be easily found on Google.</p>
                                     </motion.div>                                  
                                   )}
                                 </div>

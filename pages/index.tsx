@@ -1,7 +1,7 @@
 import Home from "./scenes/home";
 import OurClasses from "./scenes/ourProjects";
 import Benefits from "./scenes/benefits";
-import ContactUs from "./scenes/blog"
+// import ContactUs from "./scenes/blog"
 import { useEffect, useState } from "react";
 import { SelectedPage } from "../shared/types";
 import Head from "next/head";
@@ -44,7 +44,7 @@ function App() {
       <Layout setSelectedPage={setSelectedPage}>
         <Home setSelectedPage={setSelectedPage}/>
         <Benefits setSelectedPage={setSelectedPage}/>
-        <CTA setSelectedPage={setSelectedPage} />
+        <CTA />
         {/* <ContactUs setSelectedPage={setSelectedPage}/> */}
         <ContactForm  setSelectedPage={setSelectedPage}/>
       </Layout>
