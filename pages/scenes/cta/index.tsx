@@ -21,10 +21,10 @@ const CTA = () => {
     >
         <div className="md:px-24 md:pb-0 md:flex relative isolate overflow-hidden bg-[#56AEFF] px-6 pt-16 sm:px-16 md:pt-8 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
             <div className="mb-14 md:mt-[120px] mx-auto max-w-md text-center lg:mt-[120px] lg:text-center lg:mb-[100px]">
-                <h2 className="font-bold tracking-tight text-[#160F29] text-[28px] md:text-[30px] lg:text-[42px]">Schedule Your Free Consultation Today</h2>
+                <h2 className="font-bold tracking-tight text-[#160F29] text-[28px] md:text-[30px] lg:text-[42px]">Like What You See?</h2>
                 <p className="font-thin text-[20px] md:text-[22px] lg:text-[30px] mt-6 tracking-tight text-[#160F29]">A business’ online presence has a massive impact on its success. Some businesses don’t realize that a majority of their new customers decide to make a purchase based on their experience using the website.</p>
                 <div className="mt-6 flex items-center justify-center gap-x-6">
-                    <AnchorLink href='#Contact' className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Contact Us</AnchorLink>
+                    <AnchorLink href='#Contact' className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1">Request a Quote</AnchorLink>
                 </div>
             </div>
             <div>

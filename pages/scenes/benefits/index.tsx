@@ -259,7 +259,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <span className='lg:text-[22px]'>Sign up form for email subscribers, and weekly newsletter</span>
                           </li>
                         </ul>
-                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1Xu6hq9PawUcbYDxxnFBtVEPR6uVzMlbzcIF5tUHJBYLl8OD6AjMXGs4y#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nY19gM3dMY19zY0lNMjI3MWJtJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
+                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1Xu6hq9PawUcbYDxxnFBtVEPR6uVzMlbzcIF5tUHJBYLl8OD6AjMXGs4y#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nY19gM3dMY19zY0lNMjI3MWJtJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                     
                     <div className="flex flex-col p-6 mx-auto text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
@@ -327,7 +327,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <span className='lg:text-[22px]'>Sign up form for email subscribers, and weekly newsletter</span>
                           </li>
                         </ul>
-                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1HvxVN49CTLYlv8BzhipDSMbvWwvZFvzUGmgYnVs0H1Vmw7zfAlB4J9jo#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZks3YVBkPX02YlVJNlBUMG5oJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
+                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1HvxVN49CTLYlv8BzhipDSMbvWwvZFvzUGmgYnVs0H1Vmw7zfAlB4J9jo#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZks3YVBkPX02YlVJNlBUMG5oJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                     
                     <div className="flex flex-col p-6 mx-auto  text-center text-gray-900 bg-white rounded-xl border-slate-100 border-2 shadow">
@@ -395,7 +395,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                               <span className='lg:text-[22px]'>Sign up form for email subscribers, and weekly newsletter</span>
                           </li>
                         </ul>
-                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1u0yENSNQBUoEW3G2udKdI28w1oeDODl00mv3I8fFQvCA6EJsjq65Vbdk#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZEBQPX9UNmZPPGtvZG9gPERBJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Get started</Link>
+                        <Link rel="noreferrer" target="_blank" href="https://checkout.stripe.com/c/pay/cs_live_a1u0yENSNQBUoEW3G2udKdI28w1oeDODl00mv3I8fFQvCA6EJsjq65Vbdk#fidkdWxOYHwnPyd1blppbHNgWjA0SHJUTXZHd04xRExVS0ozNDdAPVxwS1dCa2R9Tk5KNzJEfHVGcWFPcl9yPWRkYT1BYkNjQ0BgQ2k9ZGQ3a11GdWZcXEczc25CRFdvbndNb2NCb2x0YkNRNTVRbWZNQDB%2FYCcpJ3VpbGtuQH11anZgYUxhJz8nZEBQPX9UNmZPPGtvZG9gPERBJ3gl" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1">Get started</Link>
                     </div>
                 </div>
             </div>
@@ -431,8 +431,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                              }}
                             >
                               <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-                                  <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-[52px]">Our Recent Projects</h2>
-                                  <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">View some of our most recently completed projects by clicking an industry tab below.</p>
+                                  <h2 className="mb-4 md:mb-16 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-[52px]">Featured Projects</h2>
+                                  {/* <p className="mt-5 text-center text-[20px] md:text-[20px] lg:text-[32px] md:mt-[50px]">View by selecting an industry tab.</p> */}
                               </div>
                             </motion.div>
                               <div className=''>
@@ -441,7 +441,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                   initial="hidden"
                                   whileInView="visible"
                                   viewport={{ once: true, amount: 0.5 }}
-                                  transition={{ delay: 0.5, duration: 0.5 }}
+                                  transition={{ delay: 1, duration: 0.5 }}
                                   variants={{
                                     hidden: { opacity: 0, x: 90 },
                                     visible: { opacity: 1, x: 0 },
@@ -449,19 +449,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                 >
                                   <button
                                     onClick={() => handleTab('construction')}
-                                    className={`${tab.active === 'construction' ? 'active' : ''} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-white hover:opacity-30 transition duration-500 ml-1 md:ml-1`}
+                                    className={`${tab.active === 'construction' ? 'active' : 'bg-[#56AEFF] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-white hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
                                   >
                                     Construction
                                   </button>
                                   <button
                                     onClick={() => handleTab('realestate')}
-                                    className={`${tab.active === 'realestate' ? 'active' : ''} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1`}
+                                    className={`${tab.active === 'realestate' ? 'active' : 'bg-[#56AEFF] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
                                   >
                                     Real Estate
                                   </button>
                                   <button
                                     onClick={() => handleTab('health')}
-                                    className={`${tab.active === 'health' ? 'active' : ''} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1`}
+                                    className={`${tab.active === 'health' ? 'active' : 'bg-[#56AEFF] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
                                   >
                                     Health Care
                                   </button>
@@ -469,52 +469,52 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                 <div>
                                   {tab.active === 'construction' && (
                                     <motion.div
-                                     className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
+                                     className='md:px-[100px] md:mt-[25px]'
                                      initial="hidden"
                                       whileInView="visible"
                                       viewport={{ once: true, amount: 0.5 }}
-                                      transition={{ delay: 0, duration: 1 }}
+                                      transition={{ delay: .75, duration: 1 }}
                                       variants={{
                                         hidden: { opacity: 0, x: 90 },
                                         visible: { opacity: 1, x: 0 },
                                       }}
                                     >
-                                      <Image src={colibri} alt="tab image" className="mt-[10px] md:mt-[50px]" />
-                                      <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[32px] md:mb-[10px] font-bold md:text-left'>Objective</h4>
+                                      <Image src={colibri} alt="tab image" className="mt-[10px] md:mt-[25px]" />
+                                      <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[32px] md:mb-[10px] font-bold md:text-left'>Overview</h4>
                                       <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[30px] md:text-left'>Colibri{"'"}s objective was to provide a comprehensive online resource for customers looking for construction services. Colibri aimed to showcase their portfolio of projects, highlight their expertise in the industry, and provide an easy-to-use platform for customers to request quotes and book appointments. It was also important to Colibri that the website could be found easily on Google.</p>
                                     </motion.div>
                                   )}
                                   {tab.active === 'realestate' && (
                                   <motion.div
-                                    className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
+                                    className='md:px-[100px] md:mt-[25px]'
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.5 }}
-                                    transition={{ delay: 0, duration: 1 }}
+                                    transition={{ delay: .75, duration: 1 }}
                                     variants={{
                                       hidden: { opacity: 0, x: 90 },
                                       visible: { opacity: 1, x: 0 },
                                     }}
                                   >
-                                    <Image src={vtr} alt="tab image" className="mt-[10px] md:mt-[50px]"/>
-                                    <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[32px] md:mb-[10px] font-bold md:text-left'>Objective</h4>
-                                    <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[30px] md:text-left'>Vargas Trihn Realty{"'"}s objective was to provide a comprehensive online resource for customers looking to buy or sell a home without an existing agent. Their goal was to showcase their previous transactions, highlight their expertise in the industry, and provide an easy-to-use platform for customers to request showings and more. It was also important to Vargas Trinh Realty that they could easily be found on Google by their customers.</p>
+                                    <Image src={vtr} alt="tab image" className="mt-[10px] md:mt-[25px]"/>
+                                    <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[32px] md:mb-[10px] font-bold md:text-left'>Overview</h4>
+                                    <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[30px] md:text-left'>HighVine Home{"'"}s objective was to provide a comprehensive online resource for their 55+ active adults who rent homes from HighVine in active adult communities around the country. Their goal was to provide an easy-to-use resource that provides information for each active adult community where HighVine owns a home to rent. It was important to HighVine that the website was easy to navigate as their audience consists of 55+ adults.</p>
                                   </motion.div>
                                   )}
                                   {tab.active === 'health' && (
                                     <motion.div
-                                    className='md:px-[100px] border-t-2 md:mt-[25px] border-[#011C43]'
+                                    className='md:px-[100px] md:mt-[25px]'
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true, amount: 0.5 }}
-                                    transition={{ delay: 0, duration: 1 }}
+                                    transition={{ delay: .75, duration: 1 }}
                                     variants={{
                                       hidden: { opacity: 0, x: 90 },
                                       visible: { opacity: 1, x: 0 },
                                     }}
                                     >
-                                      <Image src={peace} alt="tab image" className="mt-[10px] md:mt-[50px]"/>
-                                      <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[32px] md:mb-[10px] font-bold md:text-left'>Objective</h4>
+                                      <Image src={peace} alt="tab image" className="mt-[10px] md:mt-[25px]"/>
+                                      <h4 className='mt-10 mb-2 text-[22px] md:text-[22px] lg:text-[32px] md:mb-[10px] font-bold md:text-left'>Overview</h4>
                                       <p className='md:mb-[10px] text-[20px] md:text-[20px] lg:text-[30px] md:text-left'>Peace Pelvic Health{"'"}s objective was to provide a comprehensive online resource for patients seeking health care services. Their goal was to showcase their range of services, highlight their expertise in the field, and provide an easy-to-use platform for patients to learn more about Pelvic Floor Therapy, and book appointments. It was also important to Peace Pelvic Health that their website could be easily found on Google.</p>
                                     </motion.div>                                  
                                   )}

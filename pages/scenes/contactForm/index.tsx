@@ -46,7 +46,7 @@ const ContactForm = ({ setSelectedPage }: Props) => {
                         <label className="block mb-2 text-sm font-thin md:text-[16px] lg:text-[22px] text-gray-900">Your Message</label>
                         <textarea name="message" id="message" rows={6} className="block p-2.5 w-full text-sm md:text-[16px] text-gray-900 md:p-3 bg-white rounded-lg shadow-sm border border-slate-100 focus:ring-primary-500 placeholder-gray-400 focus:border-primary-500 lg:text-[24px] lg:p-6" placeholder="Leave a comment..."></textarea>
                     </div>
-                    <button type="submit" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1">Send Message</button>
+                    <button type="submit" className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1">Send Message</button>
                 </form>
             </div>
         </section>

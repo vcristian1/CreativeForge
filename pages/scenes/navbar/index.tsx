@@ -46,7 +46,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                         {/* Inner Right Side (Call and Email buttons)*/}
                         <div className={`${flexBetween} gap-2 md:gap-3`}>
                             <Link
-                            className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:opacity-30 transition duration-500 ml-1 md:ml-1"
+                            className="rounded-md bg-[#011C43] px-10 md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1"
                             href="tel:773-706-5634"
                             > Lets Chat
                             </Link>                         
