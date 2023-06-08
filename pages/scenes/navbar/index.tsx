@@ -36,9 +36,9 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 {isAboveMediumScreens ? (
                     <div className={`${flexBetween} w-full`}>
                         {/* Inner Left Side (All Links) */}
-                        <div className={`md:ml-[150px] lg:ml-[330px] flex gap-10 md:gap-12 text-[14px] md:text-[16px] lg:text-[24px] `}>
+                        <div className={`md:ml-[150px] lg:ml-[250px] flex gap-10 md:gap-12 text-[14px] md:text-[16px] lg:text-[24px] `}>
                             <Link href="/" className="font-thin xs:text-[14px] sm:text-[14px] md:text-[16px] hover:text-[#56AEFF] text-[#011C43] transition duration-500 lg:text-[24px]">Home</Link>
-                            <Link href="/Services">Services</Link>
+                            <AnchorLink href="#Expertise">Expertise</AnchorLink>
                             <AnchorLink href="#Pricing">Pricing</AnchorLink>
                             <AnchorLink href="#Projects">Projects</AnchorLink>
                             <AnchorLink href="#Contact">Contact</AnchorLink>
@@ -80,7 +80,7 @@ const Navbar = ({  isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 {/* MENU ITEMS */}
                 <div className="mt-[-5px] ml-[33%] flex flex-col gap-10 text-[18px]">
                 <Link href="/" className="font-thin text-[18px] md:text-[16px] text-[#011C43] transition duration-500 lg:text-[24px]">Home</Link>
-                <AnchorLink href="#Services">Services</AnchorLink>
+                <AnchorLink href="#Expertise">Expertise</AnchorLink>
                 <AnchorLink href="#Pricing">Pricing</AnchorLink>
                 <AnchorLink href="#Projects">Projects</AnchorLink>
                 <AnchorLink href="#Contact">Contact</AnchorLink>
