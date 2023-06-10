@@ -449,19 +449,19 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                 >
                                   <button
                                     onClick={() => handleTab('construction')}
-                                    className={`${tab.active === 'construction' ? 'active' : 'bg-[#56AEFF] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-white hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
+                                    className={`${tab.active === 'construction' ? 'active' : 'bg-[#5284ff] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-white hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
                                   >
                                     Construction
                                   </button>
                                   <button
                                     onClick={() => handleTab('realestate')}
-                                    className={`${tab.active === 'realestate' ? 'active' : 'bg-[#56AEFF] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
+                                    className={`${tab.active === 'realestate' ? 'active' : 'bg-[#5284ff] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
                                   >
                                     Real Estate
                                   </button>
                                   <button
                                     onClick={() => handleTab('health')}
-                                    className={`${tab.active === 'health' ? 'active' : 'bg-[#56AEFF] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
+                                    className={`${tab.active === 'health' ? 'active' : 'bg-[#5284ff] text-[#011C43]'} rounded-md bg-[#011C43] px-3 mb-[10px] md:px-6 py-2 md:py-2 lg:px-10 lg:py-3 lg:text-[25px] text-[#ffffff] hover:scale-x-110 hover:scale-y-110 transition duration-500 ml-1 md:ml-1`}
                                   >
                                     Health Care
                                   </button>
